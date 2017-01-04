@@ -105,3 +105,78 @@ for (var i = 0; i <=9; i = i + 1) {
   console.log (i);
 }
 */
+/* functions allows you to call on it to run all code inside of it.
+function printAmount() {
+  console.log ( amount.toFixed( 2));
+}
+
+var amount = 99.99;
+printAmount();
+
+amount = amount * 2;
+
+printAmount();
+*/
+
+/* Addding parameters (amt) to a pass values through the function
+ and getting a return value from a function
+function printAmount(amt) {
+  console.log( amt.toFixed( 2 ));
+}
+
+function formatAmount() {
+  return "$" + amount.toFixed( 2 );
+}
+
+var amount = 99.99;
+
+printAmount( amount * 2);
+
+amount = formatAmount();
+console.log( amount);
+*/
+/* uses both parameters and returns a value
+const TAX_RATE = 0.08;
+
+function calculateFinalPurchaseAmount(amt) {
+  amt = amt + (amt * TAX_RATE);
+
+  return amt;
+}
+
+var amount = 99.99;
+
+amount = calculateFinalPurchaseAmount( amount );
+
+console.log( amount.toFixed( 2 ) );
+*/
+
+// SCOPE
+/* variables only exist inside the scope of their functions
+function one(){
+  var a = 1;
+  console.log( a );
+}
+
+one();
+*/
+// nesting functions and scope access
+/*
+function outer() {
+  var a = 1;
+
+  function inner(){
+    var b = 2;
+
+    // we can access both a and b here
+    console.log ( a + b ); // 3
+  }
+
+  inner();
+
+  // we can only acces a here
+  console.log (a); //1
+
+}
+outer();
+*/
